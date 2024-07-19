@@ -1,4 +1,4 @@
-FROM centos:7.9.2009
+FROM openanolis/anolisos:7.9-x86_64
 LABEL maintainer="pader <huangmnlove@163.com>"
 
 # set environment
