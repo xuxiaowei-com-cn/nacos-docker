@@ -1,4 +1,4 @@
-FROM ghcr.io/loong64/debian:trixie-slim
+FROM lcr.loongnix.cn/debian:forky
 
 LABEL maintainer="徐晓伟 <xuxiaowei@xuxiaowei.com.cn>"
 
