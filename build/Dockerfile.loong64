@@ -27,7 +27,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
     libc6-dev \
     && python3 -m venv /home/nacos/.venv \
-    && /home/nacos/.venv/bin/pip install --no-cache-dir yara-x -i https://lpypi.loongnix.cn/loongson/pypi/+simple \
+    && /home/nacos/.venv/bin/pip install --no-cache-dir 'yara-x>=1.12.0' -i https://lpypi.loongnix.cn/loongson/pypi/+simple \
     && /home/nacos/.venv/bin/pip install --no-cache-dir cisco-ai-skill-scanner==2.0.4 \
     && apt-get remove -y python3-pip gcc libc6-dev \
     && apt-get autoremove -y \
