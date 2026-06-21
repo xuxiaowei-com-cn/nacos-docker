@@ -25,6 +25,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python3-venv \
     python3-pip \
     && python3 -m venv /home/nacos/.venv \
+    && /home/nacos/.venv/bin/pip install --no-cache-dir yara-x -i https://lpypi.loongnix.cn/loongson/pypi/+simple \
     && /home/nacos/.venv/bin/pip install --no-cache-dir cisco-ai-skill-scanner==2.0.4 \
     && apt-get remove -y python3-pip \
     && apt-get autoremove -y \
